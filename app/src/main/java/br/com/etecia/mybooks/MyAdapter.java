@@ -14,6 +14,10 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>{
     private Context context;
     private List<Books> books;
 
+    public MyAdapter(Context context, List<Books> books) {
+        this.context = context;
+        this.books = books;
+    }
 
     @NonNull
     @Override
