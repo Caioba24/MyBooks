@@ -6,10 +6,14 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
     //declarar a variavel global do recyclerview
     RecyclerView listaLivros;
 
+    List<Books> books;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +21,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         //apresentando o xml para o java
         listaLivros = findViewById(R.id.idRecyclerViewLivros);
+
+        //Criar a lista de livros (Array List)
+        books = new ArrayList<>();
+
+        books.add(
+
+
+        )
 
         //implementar a lista quando for chamada
         listaLivros.setLayoutManager(new GridLayoutManager(getApplicationContext(), 3));
